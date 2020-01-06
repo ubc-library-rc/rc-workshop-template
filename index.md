@@ -6,15 +6,17 @@ description:
 permalink: /
 ---
 
-#UBC Library Research Commons: workshop template
+# UBC Library Research Commons: workshop template
 
-Adapted from the [just-the-docs](https://github.com/pmarsceill/just-the-docs) Jekyll template created by [Patrick Marsceil](https://github.com/pmarsceill) and available under the [MIT License](http://opensource.org/licenses/MIT).
+Adapted from the [Just the Docs](https://github.com/pmarsceill/just-the-docs) Jekyll template created by [Patrick Marsceil](https://github.com/pmarsceill) and available under the [MIT License](http://opensource.org/licenses/MIT).
 
-## Set up an RC workshop site
+Start with the instructions below to setup a Research Commons workshop repository and website. For more customization and configuration options see [Just the Docs](https://pmarsceill.github.io/just-the-docs/) documentation.
 
-1. Create a repository for the workshop
-2. In the new repository, turn on _GitHub Pages_
-  - In GitHub, go to _Settings_
+## Set up the RC workshop site
+
+1. Create a public repository in GitHub
+2. In the new repository, turn on _GitHub Pages_"
+  - Go to _Settings_
   - Scroll down to the _GitHub Pages_ section
   - Under _Source_, select _master branch_
 
@@ -37,9 +39,10 @@ footer_content: "<a href=\"https://github.com/username/repository-name/\">View w
 ```
 _Note: update `title` with your workshop title and `footer_content` with your GitHub repository URL._
 
-## Add content pages
+After completing these steps the workshop site should be available at *https://<your_github_username>.github.io/<your_workshop_repository_name>/*
 
-Create an .md file for each page of the workshop website.  Add the following YAML header at the start of each .md file.
+## Add content pages
+All workshop content is written using Markdown syntax. Create an .md file for each page of the workshop website.  Add the following YAML header at the start of each .md file.
 
 ```
 ---
@@ -52,15 +55,15 @@ nav_order: 1
 `nav-order` sets the order pages will appear in the navigation menu
 
 ### Adding child Pages
-Each top-level page (parent) can also have sub-pages (children). The relationship between parent and child pages is defined in the YAML headers of both pages:
+Top-level pages on your site (parents) can also have sub-pages (children). The relationship between parent and child pages is defined in the YAML headers of both pages:
 
-1. Add this to the header of the parent page:
+Add this to the header of the parent page:
 
 ```
 has_children: true
 ```
 
-2. Add this to the header of the child page:
+Add this to the header of the child page:
 ```
 parent: Title of parent page
 ```
@@ -72,10 +75,11 @@ __Exclude a page from the navigation menu.__ By default the title of each .md fi
 nav_exclude: true
 ```
 
-See more [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
+See more [configuration options](https://pmarsceill.github.io/just-the-docs/docs/configuration/) in the Just the Docs documentation.
 
 
 ## Selected text formatting options
+Below are selected formatting options that may be useful in  in RC worskhop sites
 
 __Notes__
 Use this syntax...
@@ -105,17 +109,22 @@ Snails armed and dangerous
 Snails armed and dangerous
 {: .danger}
 
-__Prerequisites.__ To call attention to
+__Prerequisites.__
+This...
+
 ```
 - Basic slug identification
 - Familiarity with slime
 {: .prereq}
 ```
+...will look like this:
+
 - Basic slug identification
 - Familiarity with slime
 {: .prereq}
 
-__Terminal input.__ Indicates what the participant should enter in the terminal or command line.
+__Terminal input.__
+Use this formatting to indicate that the participant should input text into the terminal or command line. This...
 
 ~~~
 Input
@@ -124,6 +133,7 @@ Input
 $ git status
 ```
 ~~~
+... will appear like this in the workshop website:
 
 Input
 {: .label .label-green }
