@@ -40,7 +40,8 @@ footer_content: "<a href=\"https://github.com/username/repository-name/\">View w
 Update _title_ with your workshop title (will appear in top left of site) and _footer_content_ with your GitHub repository URL
 {: .note}
 
-After completing these steps the workshop site should be available at `https://<your_github_username>.github.io/<your_workshop_repository_name>/`. (It may take a few minutes for GitHub to generate the site.)
+After completing these steps the workshop site should be available at `https://<your_github_username>.github.io/<your_workshop_repository_name>/`
+It may take a few minutes for GitHub to generate the site
 
 ## Add content pages
 All workshop content is written in Markdown. Create an .md file for each page of the workshop website. Add the following YAML header at the start of each .md file.
