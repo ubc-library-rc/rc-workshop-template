@@ -80,6 +80,7 @@ nav_exclude: true
 Below are selected formatting options that may be useful in  in RC worskhop sites.
 
 __Notes__
+
 Use this syntax...
 
 ```  
@@ -108,7 +109,8 @@ Snails armed and dangerous
 {: .danger}
 
 __Prerequisites.__
-This...
+
+This synax...
 
 ```
 - Basic slug identification
@@ -122,6 +124,7 @@ This...
 {: .prereq}
 
 __Terminal input.__
+
 Use this formatting to indicate that the participant should input text into the terminal or command line. This...
 
 ~~~
@@ -139,7 +142,9 @@ Input
 $ git status
 ```
 
-__Terminal output.__ Shows the output that results from a an action.
+__Terminal output.__
+
+Shows the output resulting from an action.  This syntax...
 
 ~~~
 Output
@@ -150,6 +155,8 @@ Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean
 ```
 ~~~
+
+...looks like this on the site:
 
 Output
 {: .label .label-yellow }
