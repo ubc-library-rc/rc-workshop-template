@@ -1,68 +1,138 @@
-<p align="right">
-    <a href="https://badge.fury.io/rb/just-the-docs"><img src="https://badge.fury.io/rb/just-the-docs.svg" alt="Gem version"></a> <a href="https://github.com/pmarsceill/just-the-docs/actions"><img src="https://github.com/pmarsceill/just-the-docs/workflows/CI/badge.svg" alt="Build status"></a>
-</p>
-<br><br>
-<p align="center">
-    <h1 align="center">Just the Docs</h1>
-    <p align="center">A modern, highly customizable, and responsive Jekyll theme for documentation with built-in search.<br>Easily hosted on GitHub Pages with few dependencies.</p>
-    <p align="center"><strong><a href="https://pmarsceill.github.io/just-the-docs/">See it in action!</a></strong></p>
-    <br><br><br>
-</p>
+#UBC Library Research Commons: workshop template
 
-![jtd](https://user-images.githubusercontent.com/896475/47384541-89053c80-d6d5-11e8-98dc-dba16e192de9.gif)
+Adapted from the [just-the-docs](https://github.com/pmarsceill/just-the-docs) Jekyll template created by [Patrick Marsceil](https://github.com/pmarsceill), available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-## Installation
+## Setup
 
-Add this line to your Jekyll site's Gemfile:
+1. Create a repository for your workshop
+2. Turn on _GitHub Pages_ in the new repository
+  - In GitHub, go to _Settings_
+  - Scroll down to the _GitHub Pages_ section
+  - Under _Source_, select _master branch_
 
-```ruby
-gem "just-the-docs"
+3. Create an `index.md` file. This will be the home page for your workshop site.
+
+
+4. Create a `_config.yml` file in the root directory of your repository with this content:
+
+```
+title: "Name of your workshop"
+remote_theme: JeremyBuhler/rc_workshop_template
+search_enabled: false
+aux_links:
+  "UBC Library Research Commons Workshops":
+    - "https://researchcommons.library.ubc.ca/workshops/"
+heading_anchors: false
+footer_content: "<a href=\"https://github.com/username/repository-name/\">View workshop content in GitHub</a>"
+```
+_Note: update `title` with your workshop title and `footer_content` with your GitHub repository URL._
+
+## Adding content pages
+
+Create an .md file for each page of the workshop website.  Add the following YAML header at the start of the .md file.
+
+```
+---
+layout: default
+title: Title of page, will appear in left navigation menu
+nav_order: 1
+---
+```  
+
+`nav-order` sets the order pages will appear in the navigation menu
+
+### Adding child Pages
+Each top-level page (parent) can also have sub-pages (children). The relationship between parent and child pages is defined by adding lines to the YAML header for both:
+
+1. Add this line to the header of the parent page:
+
+```
+has_children: true
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: just-the-docs
+2. Add this line to the header of the child page:
+```
+parent: Title of parent page
 ```
 
-And then execute:
+## Selected configuration and formatting options
 
-    $ bundle
+__Exclude a page from the navigation menu.__ By default the title of each .md file will appear in the left navigation menu.  To exclude a page add the following to its YAML header
+```
+nav_exclude: true
+```
 
-Or install it yourself as:
+__Formatting with CSS classes.__ Use classes to apply pre-set formatting to blocks of text.  For example, use this syntax...
 
-    $ gem install just-the-docs
+```  
+Wash your hands frequently
+{: .info}
+```
+... to include a note that will look like this on the published page:
 
-## Usage
+Wash your hands frequently
+{: .info}
 
-[View the documentation](https://pmarsceill.github.io/just-the-docs/) for usage information.
+### Other formatting options
 
-## Contributing
+__Warning__
+```
+Don't step on the snails!
+{: .warn}
+```
+Don't step on the snails!
+{: .warn}
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/pmarsceill/just-the-docs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+__Danger__
+```
+Snails armed and dangerous
+{: .danger}
+```
+Snails armed and dangerous
+{: .danger}
 
-### Submitting code changes:
+__Prerequisites.__ To call attention to
+```
+- Basic slug identification
+- Familiarity with slime
+{: .prereq}
+```
+- Basic slug identification
+- Familiarity with slime
+{: .prereq}
 
-- Open a [Pull Request](https://github.com/pmarsceill/just-the-docs/pulls)
-- Ensure all CI tests pass
-- Await code review
-- Bump the version number in `just-the-docs.gemspec` and `package.json` according to [semantic versioning](https://semver.org/).
+__Terminal input.__ Indicates what the participant should enter in the terminal or command line.
 
-### Design and development principles of this theme:
+~~~
+Input
+{: .label .label-green }
+```
+$ git status
+```
+~~~
 
-1. As few dependencies as possible
-2. No build script needed
-3. First class mobile experience
-4. Make the content shine
+Input
+{: .label .label-green }
+```
+$ git status
+```
 
-## Development
+__Terminal output.__ Shows the output that results from a an action.
 
-To set up your environment to develop this theme, run `bundle install`.
+~~~
+Output
+{: .label .label-yellow }
+```
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+```
+~~~
 
-Your theme is set up just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When the theme is released, only the files in `_layouts`, `_includes`, and `_sass` tracked with Git will be released.
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+Output
+{: .label .label-yellow }
+```
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+```
