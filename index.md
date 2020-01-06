@@ -15,7 +15,7 @@ Start with the instructions below to setup a Research Commons workshop repositor
 ## Set up the RC workshop site
 
 1. Create a public repository in GitHub
-2. In the new repository, turn on _GitHub Pages_"
+2. In the new repository, turn on _GitHub Pages_:
   - Go to _Settings_
   - Scroll down to the _GitHub Pages_ section
   - Under _Source_, select _master branch_
@@ -37,12 +37,13 @@ title: Workshop title
 remote_theme: JeremyBuhler/rc_workshop_template
 footer_content: "<a href=\"https://github.com/username/repository-name/\">View workshop content in GitHub</a>"
 ```
-_Note: update `title` with your workshop title and `footer_content` with your GitHub repository URL._
+Update _title_ with your workshop title (will appear in top left of site) and _footer_content_ with your GitHub repository URL
+{: .note}
 
-After completing these steps the workshop site should be available at *https://<your_github_username>.github.io/<your_workshop_repository_name>/*
+After completing these steps the workshop site should be available at `https://<your_github_username>.github.io/<your_workshop_repository_name>/`. (It may take a few minutes for GitHub to generate the site.)
 
 ## Add content pages
-All workshop content is written using Markdown syntax. Create an .md file for each page of the workshop website.  Add the following YAML header at the start of each .md file.
+All workshop content is written in Markdown. Create an .md file for each page of the workshop website. Add the following YAML header at the start of each .md file.
 
 ```
 ---
@@ -54,8 +55,8 @@ nav_order: 1
 
 `nav-order` sets the order pages will appear in the navigation menu
 
-### Adding child Pages
-Top-level pages on your site (parents) can also have sub-pages (children). The relationship between parent and child pages is defined in the YAML headers of both pages:
+### Add child pages
+Top-level pages on the site (parents) can also have sub-pages (children). Child pages appear in the navigation menu indented below their parent. The relationship between parent and child pages is defined in the YAML headers of both pages.
 
 Add this to the header of the parent page:
 
@@ -68,18 +69,14 @@ Add this to the header of the child page:
 parent: Title of parent page
 ```
 
-## Selected configuration options
-
-__Exclude a page from the navigation menu.__ By default the title of each .md file will appear in the left navigation menu.  To exclude a page add the following to its YAML header
+### Exclude a page from navigation menu
+By default the title of each .md file will appear in the left navigation menu.  To exclude a page add the following to its YAML header
 ```
 nav_exclude: true
 ```
 
-See more [configuration options](https://pmarsceill.github.io/just-the-docs/docs/configuration/) in the Just the Docs documentation.
-
-
 ## Selected text formatting options
-Below are selected formatting options that may be useful in  in RC worskhop sites
+Below are selected formatting options that may be useful in  in RC worskhop sites.
 
 __Notes__
 Use this syntax...
