@@ -15,9 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 title: RC workshop template
 description: A Jekyll theme for RC workshops
-baseurl: "/rc_workshop_template" # the subpath of your site, e.g. /blog
-url: "https://JeremyBuhler.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-footer_content: "<a href=\"https://github.com/JeremyBuhler/rc_workshop_template/\">View in GitHub</a>"
+baseurl: "/rc-workshop-template" # the subpath of your site, e.g. /blog
+url: "https://ubc-library-rc/github.io" # the base hostname & protocol for your site, e.g. http://example.com
+footer_content: "<a href=\"https://github.com/ubc-library-rc/rc-workshop-template/\">View in GitHub</a>"
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
