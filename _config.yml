@@ -16,7 +16,7 @@
 title: RC workshop template
 description: A Jekyll theme for RC workshops
 baseurl: "/rc-workshop-template" # the subpath of your site, e.g. /blog
-url: "https://ubc-library-rc/github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ubc-library-rc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 footer_content: "<a href=\"https://github.com/ubc-library-rc/rc-workshop-template/\">View in GitHub</a>"
 
 permalink: pretty
