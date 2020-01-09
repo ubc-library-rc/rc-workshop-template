@@ -16,26 +16,26 @@ Start with the instructions below to setup a Research Commons workshop repositor
 1. Create a public repository in GitHub
 
 2. Create an `index.md` file in the root directory of the repository. This is the home page for the workshop site. Add these lines at the beginning of the `index.md` file:
-
-```
----
-layout: default
-title: Title of page
-nav_order: 1
----
-```
+    
+    ```
+    ---
+    layout: default
+    title: Title of page
+    nav_order: 1
+    ---
+    ```
 3. Create a `_config.yml` file in the root directory of the repository with the content below.  *remote_theme* points to the RC workshop template repository.
-
-```
-title: Workshop title
-remote_theme: ubc-library-rc/rc-workshop-template
-footer_content: "<a href=\"https://github.com/username/repository-name/\">View workshop content in GitHub</a>"
-```
-Update _title_ with your workshop title (will appear in top left of site) and _footer_content_ with your GitHub repository URL
-
-In *footer_content* ensure quotation marks surrounding the URL are escaped with a `\` (see example above)
-{: .warn}
-
+    
+    ```
+    title: Workshop title
+    remote_theme: ubc-library-rc/rc-workshop-template
+    footer_content: "<a href=\"https://github.com/username/repository-name/\">View workshop content in GitHub</a>"
+    ```
+    Update _title_ with your workshop title (will appear in top left of site) and _footer_content_ with your GitHub repository URL
+    
+    In *footer_content* ensure quotation marks surrounding the URL are escaped with a `\` (see example above)
+    {: .warn}
+     
 4. In the new repository, turn on _GitHub Pages_:
   - Go to _Settings_
   - Scroll down to the _GitHub Pages_ section
