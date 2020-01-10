@@ -35,14 +35,22 @@ Start with the instructions below to setup a Research Commons workshop repositor
     
     In *footer_content* ensure quotation marks surrounding the URL are escaped with a `\` (see example above)
     {: .warn}
-     
-4. In the new repository, turn on _GitHub Pages_:
-  - Go to _Settings_
-  - Scroll down to the _GitHub Pages_ section
-  - Under _Source_, select _master branch_
 
-After completing these steps the workshop site should be available at `https://<your_github_username>.github.io/<your_workshop_repository_name>/`
-It may take a few minutes for GitHub to generate the site
+4. In the new repository, turn on _GitHub Pages_:
+    - Go to _Settings_ 
+    - Scroll down to the _GitHub Pages_ section
+    - Under _Source_, select _master branch_
+    
+    After completing these steps the workshop site should be available at `https://ubc-library-rc.github.io/your_workshop_repository_name/`
+    It may take a few minutes for GitHub to generate the site
+       
+5. Create a `README.MD` file with following content (at minimum)
+    
+    ```
+    # Name of workshop
+    ### UBC Library Research Commons
+    Link to workshop: https://ubc-library-rc.github.io/your_workshop_repository_name/
+    ```  
 
 ## Add content pages
 All workshop content is written in Markdown. Create an .md file for each page of the workshop website. Add the following YAML header at the start of each .md file.
@@ -76,6 +84,18 @@ By default the title of each .md file will appear in the left navigation menu.  
 ```
 nav_exclude: true
 ```
+
+### (Optional) Acknowledgements page
+If applicable, ackowledge content used or adapted from other sources by creating an `acknowledgements.md` file that starts with:
+
+```
+---
+layout: default
+title: Acknowledgements
+nav_order: 10
+---
+```
+Make sure `nav_order` is high enough to display the Acknowledgements link at the bottom of the left-hand navigation menu.
 
 ## Selected text formatting options
 Below are selected formatting options that may be useful in  in RC worskhop sites.
@@ -115,13 +135,13 @@ This synax...
 
 ```
 - Basic slug identification
-- Familiarity with slime
+- Comfortable in the woods
 {: .prereq}
 ```
 ...will look like this:
 
 - Basic slug identification
-- Familiarity with slime
+- Comfortable in the woods
 {: .prereq}
 
 __Terminal input.__
