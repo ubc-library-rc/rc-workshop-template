@@ -7,15 +7,13 @@ description:
 
 # UBC Library Research Commons: workshop template
 
-Adapted from the [Just the Docs](https://github.com/pmarsceill/just-the-docs) Jekyll template created by [Patrick Marsceil](https://github.com/pmarsceill) and available under the [MIT License](http://opensource.org/licenses/MIT).
-
 Start with the instructions below to setup a Research Commons workshop repository and website. For more customization and configuration options see [Just the Docs](https://pmarsceill.github.io/just-the-docs/) documentation.
 
 ## Set up the RC workshop site
 
-1. Create a public repository in GitHub
+1. Create a public repository in the UBC-Library-RC GitHub account.
 
-2. Create an `index.md` file in the root directory of the repository. This is the home page for the workshop site. Add these lines at the beginning of the `index.md` file:
+2. Create an `index.md` file in the root directory of the new repository. This is the home page for the workshop site. Add these lines at the beginning of the `index.md` file:
     
     ```
     ---
