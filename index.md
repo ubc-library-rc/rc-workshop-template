@@ -191,17 +191,17 @@ To create hidden content in a dropdown use this:
 
 ~~~
 <details>
-<summary>How do I dropdown?</summary>
+<summary>This is the dropdown title</summary>
 <br>
-This is how you dropdown.
+This is the hidden dropdown content.
 </details>
 ~~~
 
 If you want it open by default: 
 ~~~
 <details open>
-<summary>How do I dropdown?</summary>
+<summary>This is the dropdown title</summary>
 <br>
-This is how you dropdown.
+This is the dropdown content that you can hide if you want to. 
 </details>
 ~~~
