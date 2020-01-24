@@ -184,3 +184,24 @@ On branch master
 Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean
 ```
+
+__Dropdowns__
+
+To create hidden content in a dropdown use this:
+
+~~~
+<details>
+<summary>How do I dropdown?</summary>
+<br>
+This is how you dropdown.
+</details>
+~~~
+
+If you want it open by default: 
+~~~
+<details open>
+<summary>How do I dropdown?</summary>
+<br>
+This is how you dropdown.
+</details>
+~~~
