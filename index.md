@@ -139,8 +139,8 @@ This synax...
 ...will look like this:
 
 Something else here  
-- Basic slug identification
-- Comfortable in the woods
+ - Basic slug identification
+ - Comfortable in the woods
 {: .prereq}
 
 __Terminal input.__
