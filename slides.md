@@ -7,7 +7,7 @@ description:
 
 # Publishing slides with reveal.js
 
-Workshop sites can include slides in [reveal.js](https://revealjs.com/) formatting. Slides can be presented in a separate tab or embedded in a page, like this:
+Workshop sites can include slides in [reveal.js](https://revealjs.com/) format. Slides can be presented <a href="../demo-slide-deck.html" target="_blank">in a separate tab</a> or embedded in a page, like this:
 
 <div style="overflow: hidden;
   padding-top: 56.25%;
@@ -75,11 +75,11 @@ A reveal.js slide deck is an html file that uses html and javascript to control 
       </section>
 
       <section data-background="#e6f7ff">
-				<h3>Second slide</h3>
-				<p>Just an example to illustrate how reveal.js works</p>
+        <h3>Second slide</h3>
+        <p>Just an example to illustrate how reveal.js works</p>
       </section>
 
-			<section>
+      <section>
         <h3>Third sample slide, a list>
       </section>		
 
