@@ -13,7 +13,7 @@ Workshop sites can include slides in [reveal.js](https://revealjs.com/) formatti
 <div style="overflow: hidden;
   padding-top: 56.25%; <!-- 0.5625=9/16 - for aspect ratio 16:9. Adjust as required for other aspect ratios. -->
   position: relative">
-<iframe src="demo-slide-deck.html" title="demo embedded slide deck" scrolling="no" frameborder="0"
+<iframe src="../demo-slide-deck.html" title="demo embedded slide deck" scrolling="no" frameborder="0"
     style="border: 0;
    height: 100%;
    left: 0;
@@ -26,17 +26,17 @@ Workshop sites can include slides in [reveal.js](https://revealjs.com/) formatti
 
 ## Create a slide deck
 
-A reveal.js slide deck is an html file that uses html and javascript to control formatting and slide behavior. To create a new slide deck copy the code chunk below into a new html file and save it to the workshop repository. Notice the <section> elements near the middle; each <section> element corresponds to a slide. Update the <title> and <section> elements with your own content.
+A reveal.js slide deck is an html file that uses html and javascript to control formatting and slide behavior. To create a new slide deck copy the code chunk below into a new file and save it to the workshop repository as an `.html` file. Notice the <section> elements near the middle; each <section> element corresponds to a slide. Update the <title> and <section> elements with your own content.
 
 ```html
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+ <head>
+	 <meta charset="utf-8">
 
     <!-- Title of page (as it will appear in search results) -->
-		<title>A demo slide deck</title>
+ <title>A demo slide deck</title>
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
