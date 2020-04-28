@@ -31,88 +31,87 @@ A reveal.js slide deck is an html file that uses html and javascript to control 
 <!doctype html>
 <html lang="en">
 
- <head>
-	 <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <!-- Title of page (as it will appear in search results) -->
- <title>A demo slide deck</title>
+  <!-- Title of page (as it will appear in search results) -->
+  <title>A demo slide deck</title>
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/reset.css">
-		<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/reveal.css">
-		<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/ubc.css" id="theme">
+	<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/reset.css">
+	<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/reveal.css">
+	<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/css/ubc.css" id="theme">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/lib/css/monokai.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="https://ubc-library-rc.github.io/reveal-ubc/lib/css/monokai.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'https://ubc-library-rc.github.io/reveal-ubc/css/print/pdf.css' : 'https://ubc-library-rc.github.io/reveal-ubc/css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'https://ubc-library-rc.github.io/reveal-ubc/css/print/pdf.css' : 'https://ubc-library-rc.github.io/reveal-ubc/css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+  <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+	<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
 
+      <section>
+        <h2>A demo slide deck</h2>
+      </section>
 
-        <section>
-					<h2>A demo slide deck</h2>
-	      </section>
+      <section data-background="#e6f7ff">
+				<h3>Second slide</h3>
+				<p>Just an example to illustrate how reveal.js works</p>
+      </section>
 
-				<section data-background="#e6f7ff">
-					<h3>Second slide</h3>
-					<p>Just an example to illustrate how reveal.js works</p>
-				</section>
-
-				<section>
-          <h3>Third sample slide, a list>
-				</section>		
-
-			</div>
+			<section>
+        <h3>Third sample slide, a list>
+      </section>		
 
 		</div>
 
-		<script src="https://ubc-library-rc.github.io/reveal-ubc/js/reveal.js"></script>
+	</div>
 
-		<script>
+	<script src="https://ubc-library-rc.github.io/reveal-ubc/js/reveal.js"></script>
 
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				center: true,
-				hash: true,
+	<script>
 
-				transition: 'none', // none/fade/slide/convex/concave/zoom
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/highlight/highlight.js' },
-					{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/search/search.js', async: true },
-					{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/zoom-js/zoom.js', async: true },
-					{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/notes/notes.js', async: true }
+			transition: 'none', // none/fade/slide/convex/concave/zoom
+
+		// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [
+				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/highlight/highlight.js' },
+				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/search/search.js', async: true },
+				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/zoom-js/zoom.js', async: true },
+				{ src: 'https://ubc-library-rc.github.io/reveal-ubc/plugin/notes/notes.js', async: true }
 				]
 			});
 
-		</script>
+	</script>
 
 	</body>
 </html>
@@ -129,28 +128,27 @@ The html file containing your slide deck will not appear in the navigation menu 
 ```html
 <a href="demo-slide-deck.html" target="_blank">View slides in new tab</a>
 ```
-
+The link to the slides is relative to the page where they're linked from.
+{: .caution}
 
 ## Embed slides on a page
 
 An alternative is to embed the slides into one of the pages in your workshop site. Add this code to the .md page where you'd like the slides to appear and change the iframe `src` and `title` attributes to point to your html slides.
 
 ```html
-<!-- settings for slides that resize to match width while maintaining aspect ratio -->
 <div style="overflow: hidden;
-  padding-top: 56.25%; <!-- 0.5625=9/16 - for aspect ratio 16:9. Adjust as required for other aspect ratios. -->
+  padding-top: 56.25%;
   position: relative">
-<iframe src="demo-slide-deck.html" title="demo embedded slide deck" scrolling="no" frameborder="0"
+  <iframe src="demo-slide-deck.html" title="demo embedded slide deck" scrolling="no" frameborder="0"
     style="border: 0;
    height: 100%;
    left: 0;
    position: absolute;
    top: 0;
    width: 100%;">
-  <p>Your browser does not support iframes.</p>
-</iframe>
+   <p>Your browser does not support iframes.</p>
+ </iframe>
 </div>
 ```
 
-This code ensures the slides will resize to fit the available space. It's written for slides displayed in a 16:9 aspect ratio, but you can change the aspect ratios by changing the `padding-top` percentage.
-{: .note}
+This code ensures the slides will resize to fit the available space. It's written for slides displayed in a 16:9 aspect ratio but you can change the aspect ratio by changing the `padding-top` percentage. For 16:9 the percentage equals 9/16, or 0.5625 (56.25%). For a 4:3 aspect ratio the percentage would be 3/4, or 0.75 (75%).
