@@ -9,9 +9,8 @@ description:
 
 Workshop sites can include slides in [reveal.js](https://revealjs.com/) formatting. Slides can be presented in a separate tab or embedded in a page, like this:
 
-<!-- settings for slides that resize to match width while maintaining aspect ratio -->
 <div style="overflow: hidden;
-  padding-top: 56.25%; <!-- 0.5625=9/16 - for aspect ratio 16:9. Adjust as required for other aspect ratios. -->
+  padding-top: 56.25%;
   position: relative">
 <iframe src="../demo-slide-deck.html" title="demo embedded slide deck" scrolling="no" frameborder="0"
     style="border: 0;
