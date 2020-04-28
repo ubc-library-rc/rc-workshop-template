@@ -14,7 +14,7 @@ Start with the instructions below to setup a Research Commons workshop repositor
 1. Create a public repository in the UBC-Library-RC GitHub account.
 
 2. Create an `index.md` file in the root directory of the new repository. This is the home page for the workshop site. Add these lines at the beginning of the `index.md` file:
-    
+
     ```
     ---
     layout: default
@@ -23,27 +23,27 @@ Start with the instructions below to setup a Research Commons workshop repositor
     ---
     ```
 3. Create a `_config.yml` file in the root directory of the repository with the content below.  *remote_theme* points to the RC workshop template repository.
-    
+
     ```
     title: Workshop title
     remote_theme: ubc-library-rc/rc-workshop-template
     footer_content: "<a href=\"https://github.com/username/repository-name/\">View workshop content in GitHub</a>"
     ```
     Update _title_ with your workshop title (will appear in top left of site) and _footer_content_ with your GitHub repository URL
-    
+
     In *footer_content* ensure quotation marks surrounding the URL are escaped with a `\` (see example above)
     {: .warn}
 
 4. In the new repository, turn on _GitHub Pages_:
-    - Go to _Settings_ 
+    - Go to _Settings_
     - Scroll down to the _GitHub Pages_ section
     - Under _Source_, select _master branch_
-    
+
     After completing these steps the workshop site should be available at `https://ubc-library-rc.github.io/your_workshop_repository_name/`
     It may take a few minutes for GitHub to generate the site
-       
+
 5. Create a `README.MD` file with following content (at minimum)
-    
+
     ```
     # Name of workshop
     ### UBC Library Research Commons
@@ -51,7 +51,7 @@ Start with the instructions below to setup a Research Commons workshop repositor
     ```  
 
 ## Add content pages
-All workshop content is written in Markdown. Create an .md file for each page of the workshop website. Add the following YAML header at the start of each .md file.
+Workshop content pages are written in Markdown (see [Markdown guide](https://www.markdownguide.org/basic-syntax/)). Create an .md file for each page of the workshop website. Add the following YAML header at the start of each .md file.
 
 ```
 ---
@@ -198,11 +198,11 @@ This is the hidden dropdown content.
 </details>
 ~~~
 
-If you want it open by default: 
+If you want it open by default:
 ~~~
 <details open>
 <summary>This is the dropdown title</summary>
 <br>
-This is the dropdown content that you can hide if you want to. 
+This is the dropdown content that you can hide if you want to.
 </details>
 ~~~
