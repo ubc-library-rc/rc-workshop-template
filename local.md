@@ -1,13 +1,18 @@
 ---
 layout: default
-title: Running locally (GAAs only)
+title: Running locally (optional)
 nav_order: 10
 description:
 ---
 
 
 
-# Running the template locally
+# Running the template locally (optional)
+
+<p> GitHub Pages uses Jekyll to turn our markdown files into a website. This is done on GitHub's servers, so you can only see how the site will look after pushing your content to GitHub and waiting for GitHub to regenerate your site.</p>
+
+<p>If you prefer to check your work locally before uploading to GitHub you'll need to run Jekyll on your own computer following the directions below. This is not required but may be a preferred workflow for some content creators.</p>
+
 
 1. Install Ruby [[Mac](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-and-set-up-a-local-programming-environment-on-macos)] [[Windows](https://rubyinstaller.org/)]
 
@@ -46,7 +51,7 @@ description:
 6. Compile & run Jekyll
 
     * run `gem install bundler` in the ruby terminal
-    
+
     * run `bundle install` in the ruby terminal
 
     * run `bundle exec jekyll s` in the ruby terminal
@@ -55,10 +60,8 @@ description:
 
     * `Ctrl + c` terminates the process
 
-1. Edit Markdown files 
+1. Edit Markdown files
 
-1. Refresh the url and check changes. 
+1. Refresh the url and check changes.
 
 1. Delete `local.md` in any workshop cloned from the template
-
-
