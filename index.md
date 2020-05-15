@@ -27,7 +27,7 @@ Start with the instructions below to setup a Research Commons workshop repositor
     ```
     title: Workshop title
     remote_theme: ubc-library-rc/rc-workshop-template
-    footer_content: "<a href=\"https://github.com/username/repository-name/\">View workshop content in GitHub</a>"
+    footer_content: "<a href=\"https://github.com/username/repository-name/\">View in GitHub</a>"
     ```
     Update _title_ with your workshop title (will appear in top left of site) and _footer_content_ with your GitHub repository URL
 
