@@ -21,6 +21,7 @@ layout: default
 title: Title of page
 nav_order: 1
 ---
+:heavy_exclamation_mark: This workshop is in development and not yet complete. :heavy_exclamation_mark:
 ```
 3. Create a `_config.yml` file in the root directory of the repository with the content below.  *remote_theme* points to the RC workshop template repository.
 
@@ -47,6 +48,7 @@ footer_content: "<a href=\"https://github.com/username/repository-name/\">View i
 ```
 # Name of workshop
 ### UBC Library Research Commons
+:heavy_exclamation_mark: This workshop is in development and not yet complete. :heavy_exclamation_mark:    
 Link to workshop: https://ubc-library-rc.github.io/your_workshop_repository_name/
 ```  
 
