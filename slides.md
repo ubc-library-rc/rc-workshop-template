@@ -25,7 +25,7 @@ Workshop sites can include slides in [reveal.js](https://revealjs.com/) format. 
 
 ## Create a slide deck
 
-Reveal.js is a presentation framework for creating slide decks with html. To create a new slide deck copy the code chunk below into a new file and save it to the workshop repository as an `.html` file. Notice the <section> elements near the middle; each <section> element corresponds to a slide. Update the <title> and <section> elements with your own content.
+Reveal.js is a presentation framework for creating slide decks with html. To create a new slide deck copy the code chunk below into a new file and save it to the workshop repository as an `.html` file. Notice the <section> elements near the middle; each <section> element corresponds to a slide. Update the `<title>` and `<section>` elements with your own content.
 
 ```html
 <!doctype html>
