@@ -145,6 +145,28 @@ Something else here
  - Comfortable in the woods
 {: .prereq}
 
+__Step-by-step instructions__
+```
+Step 1
+{: .label .label-step}
+Do this thing
+{: .step}
+
+Step 2
+{: .label .label-step}
+Do this other thing
+{: .step}
+```
+Step 1
+{: .label .label-step}
+Do this thing
+{: .step}
+
+Step 2
+{: .label .label-step}
+Do this other thing
+{: .step}
+
 __Terminal input.__
 
 Use this formatting to indicate that the participant should input text into the terminal or command line. This...
