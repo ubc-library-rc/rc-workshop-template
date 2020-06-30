@@ -30,6 +30,12 @@ $logo: "{{ site.logo | absolute_url }}";
 // Import custom color scheme scss
 //
 
+//
+// Import custom step-by-steps
+//
+@import "./custom/steps";
+
+
 {% if site.color_scheme == "dark" %}
 @import "./color_schemes/dark.scss";
 {% endif %}
