@@ -224,8 +224,6 @@ This synax...
 
 *1*{: .circle .circle-blue} Number in normal text
 
-This might be useful to add certain check-points in a tutorial and you can quick-ly refer back to them
-
 You can also use this in headers, lists and other markdown suported elements, e.g.,
 
 ```
