@@ -5,6 +5,8 @@ nav_order: 1
 description:
 ---
 
+
+
 # UBC Library Research Commons: workshop template
 
 Start with the instructions below to setup a Research Commons workshop repository and website. For more customization and configuration options see [Just the Docs](https://pmarsceill.github.io/just-the-docs/) documentation.
@@ -167,6 +169,7 @@ Step 2
 Do this other thing
 {: .step}
 
+
 __Terminal input.__
 
 Use this formatting to indicate that the participant should input text into the terminal or command line. This...
@@ -210,6 +213,44 @@ Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean
 ```
 
+__Circled numbers__
+
+This synax...
+
+```
+*1*{: .circle .circle-blue} Number in normal text
+```
+...will look like this:
+
+*1*{: .circle .circle-blue} Number in normal text
+
+You can also use this in headers, lists and other markdown suported elements, e.g.,
+
+```
+* *1*{: .circle .circle-blue} `.circle-blue`
+* *2*{: .circle .circle-red} `.circle-red`
+* *3*{: .circle .circle-yellow} `.circle-yellow`
+* *4*{: .circle .circle-green} `.circle-green`
+* *5*{: .circle .circle-purple} `.circle-purple` 
+
+## *2*{: .circle .circle-red} Number in h2
+
+### *10*{: .circle .circle-yellow} Number in h3
+```
+
+...will look like this:
+
+* *1*{: .circle .circle-blue} `.circle-blue`
+* *2*{: .circle .circle-red} `.circle-red`
+* *3*{: .circle .circle-yellow} `.circle-yellow`
+* *4*{: .circle .circle-green} `.circle-green`
+* *5*{: .circle .circle-purple} `.circle-purple` 
+
+## *2*{: .circle .circle-red} Number in h2
+
+### *10*{: .circle .circle-yellow} Number in h3
+
+
 __Dropdowns__
 
 To create hidden content in a dropdown use this:
@@ -230,3 +271,4 @@ If you want it open by default:
 This is the dropdown content that you can hide if you want to.
 </details>
 ~~~
+
