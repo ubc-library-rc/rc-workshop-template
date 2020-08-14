@@ -24,6 +24,9 @@ title: Title of page
 nav_order: 1
 ---
 ## Note: this workshop is in development and not yet complete.
+
+This is a [UBC Library Research Commons workshop](https://researchcommons.library.ubc.ca). For more information about our [upcoming workshops](https://researchcommons.library.ubc.ca/events/) and to view [our open workshop content](https://researchcommons.library.ubc.ca/oer/) check us out at https://researchcommons.library.ubc.ca.
+
 ```
 3. Create a `_config.yml` file in the root directory of the repository with the content below.  *remote_theme* points to the RC workshop template repository.
 
@@ -231,7 +234,7 @@ You can also use this in headers, lists and other markdown suported elements, e.
 * *2*{: .circle .circle-red} `.circle-red`
 * *3*{: .circle .circle-yellow} `.circle-yellow`
 * *4*{: .circle .circle-green} `.circle-green`
-* *5*{: .circle .circle-purple} `.circle-purple` 
+* *5*{: .circle .circle-purple} `.circle-purple`
 
 ## *2*{: .circle .circle-red} Number in h2
 
@@ -244,7 +247,7 @@ You can also use this in headers, lists and other markdown suported elements, e.
 * *2*{: .circle .circle-red} `.circle-red`
 * *3*{: .circle .circle-yellow} `.circle-yellow`
 * *4*{: .circle .circle-green} `.circle-green`
-* *5*{: .circle .circle-purple} `.circle-purple` 
+* *5*{: .circle .circle-purple} `.circle-purple`
 
 ## *2*{: .circle .circle-red} Number in h2
 
@@ -271,4 +274,3 @@ If you want it open by default:
 This is the dropdown content that you can hide if you want to.
 </details>
 ~~~
-
