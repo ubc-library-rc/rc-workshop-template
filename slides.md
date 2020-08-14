@@ -98,6 +98,8 @@ Reveal.js is a presentation framework for creating slide decks with html. To cre
                     </ul>
                   </section>
 
+                For similar
+
 		</div>
 
 	</div>
