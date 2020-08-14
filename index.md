@@ -25,7 +25,7 @@ nav_order: 1
 ---
 ## Note: this workshop is in development and not yet complete.
 
-This is a [UBC Library Research Commons workshop](https://researchcommons.library.ubc.ca). For more information about our [upcoming workshops](https://researchcommons.library.ubc.ca/events/) and to view [our open workshop content](https://researchcommons.library.ubc.ca/oer/) check us out at https://researchcommons.library.ubc.ca.
+This is a [UBC Library Research Commons workshop](https://researchcommons.library.ubc.ca). For more information about our [upcoming workshops](https://researchcommons.library.ubc.ca/events/) and to view [our open workshop content](https://researchcommons.library.ubc.ca/oer/) find us at https://researchcommons.library.ubc.ca.
 
 ```
 3. Create a `_config.yml` file in the root directory of the repository with the content below.  *remote_theme* points to the RC workshop template repository.
