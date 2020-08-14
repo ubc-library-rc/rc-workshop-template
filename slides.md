@@ -81,18 +81,22 @@ Reveal.js is a presentation framework for creating slide decks with html. To cre
 
       <section>
         <h3>Fourth sample slide, a list</h3>
-      </section>		
+      </section>		      
 
       <section data-background="#002145">
-        <h3>The UBC Library Research Commons</h3>
-        <p>We are a multidisciplinary hub supporting research endeavours, partnerships, and education. We are a community space that embraces both new and traditional exploratory scholarship and provides access to services and expertise for the advancement of research. </p>
+               <h3>UBC Library Research Commons</h3>
+               <blockquote>A multidisciplinary hub supporting research endeavours, partnerships, and education.</blockquote> <blockquote>We are a community space that embraces both new and traditional exploratory scholarship and provides access to services and expertise for the advancement of research. </blockquote>
+             </section>
 
-        <ul>
-        <li>https://researchcommons.library.ubc.ca/</li>
-        <li>[Upcoming events](https://researchcommons.library.ubc.ca/events/)</li>
-        <li>[Open Educational Resources](https://researchcommons.library.ubc.ca/oer/)</li>
-        </ul>
-      </section>
+            <section data-background="#002145">
+
+           More from the Research Commons:
+               <ul>
+               <li><a href="https://researchcommons.library.ubc.ca/">researchcommons.library.ubc.ca</a></li>
+               <li><a href="https://researchcommons.library.ubc.ca/events/">Upcoming Events</a></li>
+               <li><a href="https://researchcommons.library.ubc.ca/oer/">Open Educational Resources</a></li>
+               </ul>
+             </section>
 
 		</div>
 
