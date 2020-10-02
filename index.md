@@ -56,6 +56,10 @@ In *footer_content* ensure quotation marks surrounding the URL are escaped with 
 :heavy_exclamation_mark: This workshop is in development and not yet complete. :heavy_exclamation_mark:    
 Link to workshop: https://ubc-library-rc.github.io/your_workshop_repository_name/
 ```  
+One you are ready add a copyright statement to your README.md.
+```
+This repository is under an MIT license and the content in it is under a CC-BY license.
+```
 
 ## Add content pages
 Workshop content pages are written in Markdown (see [Markdown guide](https://www.markdownguide.org/basic-syntax/)). Create an .md file for each page of the workshop website. Add the following YAML header at the start of each .md file.

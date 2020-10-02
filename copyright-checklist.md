@@ -26,4 +26,4 @@ Make your work openly available by assigning your own open license to it.
   [ ] Reveal.js slide deck in .pdf
 [ ] Images or other files created for use in the OER
 [ ] Indicate which parts have been borrowed from other sources (and will have their own reuse terms). Attribution should include: Title, Author, Source, License
-[ ] Apply an MIT license to the workshop template.  
+[ ] Apply an MIT license to the workshop template by adding a line to the README.md file. This can also be done with a license.txt file if that is more appropriate for the repository content. 
