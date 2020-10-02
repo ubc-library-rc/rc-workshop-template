@@ -56,10 +56,6 @@ In *footer_content* ensure quotation marks surrounding the URL are escaped with 
 :heavy_exclamation_mark: This workshop is in development and not yet complete. :heavy_exclamation_mark:    
 Link to workshop: https://ubc-library-rc.github.io/your_workshop_repository_name/
 ```  
-One you are ready add a copyright statement to your README.md.
-```
-This repository is under an MIT license and the content in it is under a CC-BY license.
-```
 
 ## Add content pages
 Workshop content pages are written in Markdown (see [Markdown guide](https://www.markdownguide.org/basic-syntax/)). Create an .md file for each page of the workshop website. Add the following YAML header at the start of each .md file.
@@ -278,3 +274,16 @@ If you want it open by default:
 This is the dropdown content that you can hide if you want to.
 </details>
 ~~~
+
+## Copyright
+
+1. One you are ready to share your content, uncomment the copyright statement in your README.md file and adjust it as necessary.
+```
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work (the content of this website) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+```
+
+2. Uncomment and adjust the same copyright statement in the side navigation footer.
+```
+<p class="text-small text-grey-dk-000 mb-4"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work (the content of this website) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+
+```
