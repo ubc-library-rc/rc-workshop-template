@@ -277,14 +277,6 @@ This is the dropdown content that you can hide if you want to.
 
 ## Copyright
 
-1. One you are ready to share your content, uncomment the copyright statement by removing these tags: <!-- --> in your README.md file and adjust the copyright statement as necessary.
-```
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work (the content of this website) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-```
+1. One you are ready to share your content, uncomment the copyright statement by removing these tags: **<!-- -->** in your README.md file and adjust the copyright statement as necessary.
 
-2. Uncomment and adjust the same copyright statement in the side navigation footer by removing these tags: <!-- -->
-
-```
-<p class="text-small text-grey-dk-000 mb-4"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work (the content of this website) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
-
-```
+2. Uncomment and adjust the same copyright statement in the side navigation footer by removing these tags: **<!-- -->**
