@@ -84,21 +84,28 @@ Reveal.js is a presentation framework for creating slide decks with html. To cre
       </section>		      
 
       <section data-background="#002145">
-                    <h3>UBC Library <br> Research Commons</h3>
-                    <blockquote>A multidisciplinary hub supporting research endeavours, partnerships, and education.</blockquote>
-                  </section>
+        <h3>UBC Library <br> Research Commons</h3>
+        <blockquote>A multidisciplinary hub supporting research endeavours, partnerships, and education.</blockquote>
+      </section>
 
-                 <section data-background="#002145">
+      <section data-background="#002145">
+         <p> More from the Research Commons at (UBC-V)</p>
+         <ul>
+           <li><a href="https://researchcommons.library.ubc.ca/">researchcommons.library.ubc.ca</a></li>
+           <li><a href="https://researchcommons.library.ubc.ca/events/">Upcoming events</a></li>
+           <li><a href="https://researchcommons.library.ubc.ca/oer/">Open Educational Resources (OERs)</a></li>
+         </ul>
+      </section>
 
-                More from the Research Commons:
-                    <ul>
-                    <li><a href="https://researchcommons.library.ubc.ca/">researchcommons.library.ubc.ca</a></li>
-                    <li><a href="https://researchcommons.library.ubc.ca/events/">Upcoming events</a></li>
-                    <li><a href="https://researchcommons.library.ubc.ca/oer/">Open Educational Resources (OERs)</a></li>
-                    </ul>
-                  </section>
+      <section data-background="#002145">
+          <p> And  from the Center for Scholarly Communication (UBC-O)</p>
+          <ul>
+            <li><a href="https://library.ok.ubc.ca/research/csc/">library.ok.ubc.ca/research/csc/</a></li>
+            <li><a href="https://library.ok.ubc.ca/research/csc/workshops/">Upcoming events</a></li>
+            </ul>
+      </section>
 
-                For similar
+
 
 		</div>
 
