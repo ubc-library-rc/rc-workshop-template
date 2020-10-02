@@ -14,9 +14,9 @@ description:
 ## Can your material be published openly?
 - [ ] Is the work you borrow protected by copyright?   
 
-  - [ ] If NO, then you can use without further consideration (typically this only applies if the work is very old or has been bequeathed to the public domain)  
+- [ ] If NO, then you can use without further consideration (typically this only applies if the work is very old or has been bequeathed to the public domain)  
 
-  - [ ] If YES, you need to identify if you have permission to reuse or not. This permission can come in the form of
+- [ ] If YES, you need to identify if you have permission to reuse or not. This permission can come in the form of
 
 1. A direct response to a permission request to the creator/copyright holder  
 
@@ -31,7 +31,7 @@ Make your work openly available by assigning your own open license to it.
 
 - [ ] Make sure the license is in a highly visible place and you let potential users know which parts of the work are original to you (and under the terms of the open license).
 
-This includes:
+**This includes:**
 
 - [ ] Reveal.js slide deck in .pdf
 
