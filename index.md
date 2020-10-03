@@ -51,7 +51,7 @@ Update the following, as necessary:
 - _license_url_, _license_name_, and _license_image_url_ with the license you will apply to your content
 
 
-_license_image_url_ is optional
+If you're not sure what to choose, the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) is a good license for Research Commons OERs. The _license_image_url_ is optional.
   {: .note}
 
 *4*{: .circle .circle-green} In the new repository, turn on _GitHub Pages_:
@@ -215,7 +215,7 @@ nothing to commit, working tree clean
 ```
 
 ### Code block syntax highlighting  
-Add syntax highlighting to code blocks by specifying the language after the three backticks at the beginning of a block. The example below is for markdown (md). Other syntax options include _js, py, sql, sh, yaml_, and many more.
+Add syntax highlighting to code blocks by specifying the language after the three backticks at the beginning of a block. The example below is for markdown (md). Other syntax options include _html, xml, js, py, sql, sh, yaml_, and many more.
 
 ~~~
 ```md
