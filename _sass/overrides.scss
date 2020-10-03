@@ -3,10 +3,9 @@
 //
 
 $callouts: (
-    note: ($blue-300, rgba($blue-000, .2), 'NOTE'),
-    warn: ($yellow-300, rgba($yellow-000, .2), 'WARNING'),
-    danger: ($red-300, rgba($red-000, .2), 'DANGER'),
-    prereq: ($green-300, rgba($green-000, .2), 'PREREQUISITES')
+    note: ($blue-300, rgba($blue-000, .1), 'Note'),
+    warn: ($yellow-300, rgba($yellow-000, .2), 'Warning'),
+    prereq: ($green-300, rgba($green-000, .1), 'Prerequisites')
 );
 
 @each $class, $props in $callouts {
@@ -16,15 +15,15 @@ $callouts: (
         border-radius: $border-radius;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
         padding: .8rem;
-        font-size: .8em;
-        margin: 20px;
+        font-size: 1em;
+        margin: 30px 20px 40px 20px;
 
         &::before {
             color: nth($props, 1);
             content: nth($props, 3);
             display: block;
             font-weight: bold;
-            font-size: .75em;
+            font-size: 1em;
             padding-bottom: .125rem;
         }
     }
@@ -47,4 +46,8 @@ code {
     padding-top: 0.05em;
     margin-bottom: 0;
     margin-left: 0;
+}
+
+div.highlighter-rouge {
+  margin-bottom:1.5rem;
 }
