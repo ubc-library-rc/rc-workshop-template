@@ -17,10 +17,14 @@ title: RC workshop template
 description: A Jekyll theme for RC workshops
 baseurl: "/rc-workshop-template" # the subpath of your site, e.g. /blog
 url: "https://ubc-library-rc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-footer_content: "<img width=\"18%\" style=\"float: right; padding-bottom:15px\" src=\"https://raw.githubusercontent.com/marquesarthur/research-commons-r-workshop/master/figures/research_commons_logo.png\"><a href=\"https://github.com/ubc-library-rc/rc-workshop-template/\">View in GitHub</a>"
+footer_content: "<a href=\"https://github.com/ubc-library-rc/rc-workshop-template/\">View in GitHub</a>"
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
+
+license_url: "http://creativecommons.org/licenses/by/4.0"
+license_name: "Creative Commons Attribution 4.0 International License"
+license_image_url: "https://i.creativecommons.org/l/by/4.0/88x31.png"
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
@@ -49,8 +53,8 @@ color_scheme: nil
 # e.g, UA-1234567-89
 # ga_tracking: UA-2709176-10
 
-# plugins:
-#   - jekyll-seo-tag
+plugins:
+  - jekyll-seo-tag
 
 compress_html:
   clippings: all

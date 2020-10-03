@@ -22,7 +22,9 @@ description:
 
 2. A general statement made by a creator (think website terms of use that allow for educational use)  
 
-3. The inclusion of an open license such as creative commons, GNU, MIT etc. If the work is licensed under an open license there will be licensing requirements. The most common of which is attribution. If you use a work that is openly licensed and requires attribution, you are obliged to comply. To do otherwise may be an infringement.  
+3. The inclusion of an open license such as creative commons, GNU, MIT etc. If the work is licensed under an open license there will be licensing requirements. The most common of which is attribution. If you use a work that is openly licensed and requires attribution, you are obliged to comply. To do otherwise may be an infringement.
+
+Add any required attribution or permissions statements to your *Acknowledgments* page.
 
 ## Is your work openly licensed?
 Make your work openly available by assigning your own open license to it.
@@ -38,5 +40,3 @@ Make your work openly available by assigning your own open license to it.
 - [ ] Images or other files created for use in the OER
 
 - [ ] Indicate which parts have been borrowed from other sources (and will have their own reuse terms). Attribution should include: Title, Author, Source, License
-
-- [ ] Apply an MIT license to the workshop template by adding a line to the README.md file (This can also be done with a license.txt file if that is more appropriate for the repository content)
