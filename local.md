@@ -10,18 +10,20 @@ description:
 
 <p>If you prefer to check your work locally before making it public on GitHub you'll need to run Jekyll on your own computer following the directions below. This is not required but may be a preferred workflow for some content creators.</p>
 
+These instructions assume you have already followed the steps in [Getting started](https://ubc-library-rc.github.io/rc-workshop-template) and have download a local copy of your workshop repository.
 
-1. Install Ruby [[Mac](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-and-set-up-a-local-programming-environment-on-macos)] [[Windows](https://rubyinstaller.org/)]
+For more information about running Jekyll locally see [this page](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll).
+<br />
 
-1. Install Jekyll [[Mac](https://jekyllrb.com/docs/installation/macos/)] [[Windows](https://jekyllrb.com/docs/installation/windows/)]
+*1*{: .circle .circle-green} Install Ruby [[Mac](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-and-set-up-a-local-programming-environment-on-macos)] [[Windows](https://rubyinstaller.org/)]
 
-1. Open the ruby terminal
+*2*{: .circle .circle-green} Install Jekyll [[Mac](https://jekyllrb.com/docs/installation/macos/)] [[Windows](https://jekyllrb.com/docs/installation/windows/)]
 
-    * On Windows, toggle the Windows key and search for `Start Command Prompt with Ruby`
+*3*{: .circle .circle-green} Open the ruby terminal
+- On Windows, toggle the Windows key and search for `Start Command Prompt with Ruby`
+- On Mac, open a terminal app of your preference
 
-    * On Mac, open a terminal app of your preference
-
-1. Navigate to the directory where you downloaded this repo
+*4*{: .circle .circle-green} Navigate to the directory where you downloaded a local copy of your repository
 
     * e.g. `cd /Workspace/intro-r`
 
@@ -49,7 +51,7 @@ description:
 
     -->
 
-6. Compile & run Jekyll
+*5*{: .circle .circle-green} Compile & run Jekyll
 
     * run `gem install bundler` in the ruby terminal
 
@@ -61,6 +63,8 @@ description:
 
     * `Ctrl + c` terminates the process
 
-1. Edit Markdown files
+*6*{: .circle .circle-green} Edit your local copy of the repository
 
-1. Refresh the url and check changes.
+*7*{: .circle .circle-green} Refresh the url to check your changes  
+<br/>
+Once you are satisfied with your changes, push your repository back to GitHub to make them public.
