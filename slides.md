@@ -6,6 +6,17 @@ description:
 ---
 
 # Publishing slides with reveal.js
+{: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 
 Workshop sites can include slides in [reveal.js](https://revealjs.com/) format. Slides can be presented <a href="../demo-slide-deck.html" target="_blank">in a separate tab</a> or embedded in a page, like this:
 
@@ -145,7 +156,7 @@ Reveal.js slide decks have many formatting and display options - [see here](http
 
 The html file containing your slide deck will not appear in the navigation menu of your workshop site. To make it visible you can either link to it from one of the website content pages, or embed it in a page.
 
-### Link to the slide deck
+## Link to the slide deck
 
  Simply add a link to the slide deck html to one of the .md pages in the site. Recommended practice is to open the slide deck in a new tab using the `target="_blank"` attribute.
 
@@ -176,3 +187,6 @@ An alternative is to embed the slides into one of the pages in your workshop sit
 ```
 
 This code ensures the slides will resize to fit the available space. It's written for slides displayed in a 16:9 aspect ratio but you can change the aspect ratio by changing the `padding-top` percentage. For 16:9 the percentage equals 9/16, or 0.5625 (56.25%). For a 4:3 aspect ratio the percentage would be 3/4, or 0.75 (75%).
+
+## Generate PDF of slides
+See https://revealjs.com/pdf-export/ for instructions on exporting reveal.js slides to PDF. (Some formatting may be lost in the export.)
