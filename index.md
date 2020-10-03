@@ -14,10 +14,10 @@ Start with the instructions below to setup a Research Commons workshop repositor
 ## Set up the RC workshop site
 
 *1*{: .circle .circle-green} Create a public repository in the UBC-Library-RC GitHub account.  
-  
+
 *2*{: .circle .circle-green} Create an `index.md` file in the root directory of the new repository. This is the home page for the workshop site. Add these lines at the beginning of the `index.md` file:
 
-```
+```md
 ---
 layout: default
 title: Title of page
@@ -29,7 +29,7 @@ This is a [UBC Library Research Commons workshop](https://researchcommons.librar
 ```
 *3*{: .circle .circle-green} Create a `_config.yml` file in the root directory of the repository with the content below.  *remote_theme* points to the RC workshop template repository.
 
-```
+```yaml
 title: Workshop title
 remote_theme: ubc-library-rc/rc-workshop-template
 github_repo_url: "https://github.com/ubc-library-rc/repository-name/"
@@ -56,7 +56,7 @@ It may take a few minutes for GitHub to generate the site.
 
 *5*{: .circle .circle-green} Create a `README.MD` file with following content (at minimum)
 
-```
+```md
 # Name of workshop
 ### UBC Library Research Commons
 
@@ -69,7 +69,7 @@ Update license information with if you choose to apply a different license to yo
 
 *6*{: .circle .circle-green} Create an `acknowledgments.md` file with attribution and permissions statements for material used in your workshop, as applicable. At a minimum it should have this contents
 
-```
+```md
 ---
 layout: default
 title: Acknowledgements
@@ -84,7 +84,7 @@ Site template adapted from the [just-the-docs](https://github.com/pmarsceill/jus
 ## Add content pages
 Workshop content pages are written in Markdown (see [Markdown guide](https://www.markdownguide.org/basic-syntax/)). Create an .md file for each page of the workshop website. Add the following YAML header at the start of each .md file.
 
-```
+```yaml
 ---
 layout: default
 title: Title of page, will appear in left navigation menu
@@ -97,32 +97,20 @@ Top-level pages on the site (parents) can also have sub-pages (children). Child 
 
 Add this to the header of the parent page:
 
-```
+```yaml
 has_children: true
 ```
 
 Add this to the header of the child page:
-```
+```yaml
 parent: Title of parent page
 ```
 
 ### Exclude a page from navigation menu
 By default the title of each .md file will appear in the left navigation menu.  To exclude a page add the following to its YAML header
-```
+```yaml
 nav_exclude: true
 ```
-
-### (Optional) Acknowledgements page
-If applicable, ackowledge content used or adapted from other sources by creating an `acknowledgements.md` file that starts with:
-
-```
----
-layout: default
-title: Acknowledgements
-nav_order: 10
----
-```
-
 
 ## Selected text formatting options
 Below are selected formatting options that may be useful in  in RC worskhop sites.
@@ -191,7 +179,7 @@ Use this formatting to indicate that the participant should input text into the 
 ~~~
 Input
 {: .label .label-green }
-```
+```sh
 $ git status
 ```
 ~~~
@@ -199,7 +187,7 @@ $ git status
 
 Input
 {: .label .label-green }
-```
+```sh
 $ git status
 ```
 
@@ -210,7 +198,7 @@ Shows the output resulting from an action.  This syntax...
 ~~~
 Output
 {: .label .label-yellow }
-```
+```sh
 On branch master
 Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean
@@ -221,11 +209,25 @@ nothing to commit, working tree clean
 
 Output
 {: .label .label-yellow }
-```
+```sh
 On branch master
 Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean
 ```
+
+### Code block syntax highlighting  
+Add syntax highlighting to code blocks by specifying the language after the three backticks at the beginning of a block. The example below is for markdown (md). Other syntax options include _js, py, sql, sh, yaml_, and many more.
+
+~~~
+```md
+Code block with [markdown](https://markdownguide.org) syntax highlighting.
+```
+~~~
+
+```md
+Code block with [markdown](https://markdownguide.org) syntax highlighting.
+```
+
 
 ### Circled numbers
 
