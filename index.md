@@ -40,6 +40,7 @@ This is a [UBC Library Research Commons workshop](https://researchcommons.librar
 ```yaml
 title: Workshop title
 remote_theme: ubc-library-rc/rc-workshop-template
+search_enabled: false
 github_repo_url: "https://github.com/ubc-library-rc/repository-name/"
 license_url: "http://creativecommons.org/licenses/by/4.0/"
 license_name: "Creative Commons Attribution 4.0 International License"
