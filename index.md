@@ -5,9 +5,17 @@ nav_order: 1
 description:
 ---
 
-
-
 # UBC Library Research Commons: workshop template
+{: .no_toc }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 Start with the instructions below to setup a Research Commons workshop repository and website. For more customization and configuration options see [Just the Docs](https://pmarsceill.github.io/just-the-docs/) documentation.
 
@@ -113,9 +121,9 @@ nav_exclude: true
 ```
 
 ## Selected text formatting options
-Below are selected formatting options that may be useful in  in RC worskhop sites.
+Below are some formatting options that may be useful in RC worskhop sites. For more configuration options see [Just the Docs](https://pmarsceill.github.io/just-the-docs/) documentation.
 
-### Notes
+### Callouts
 
 Use this syntax...
 
@@ -128,23 +136,18 @@ Wash your hands frequently
 Wash your hands frequently
 {: .note}
 
-### Warning
+
 ```
 Don't step on the snails!
 {: .warn}
 ```
 Don't step on the snails!
 {: .warn}
-
-### Prerequisites
-
-This synax...
 
 ```
 Basic slug identification; comfortable in the woods.
 {: .prereq}
 ```
-...will look like this:
 
  Basic slug identification; comfortable in the woods.
 {: .prereq}
@@ -172,9 +175,9 @@ Do this other thing
 {: .step}
 
 
-### Terminal input
+### Terminal input/output
 
-Use this formatting to indicate that the participant should input text into the terminal or command line. This...
+Sometimes it's helpful to distinguish between what a workshop participant should input into the terminal or command line, and what they should expect as output. This code for an input...
 
 ~~~
 Input
@@ -191,9 +194,7 @@ Input
 $ git status
 ```
 
-### Terminal output
-
-Shows the output resulting from an action.  This syntax...
+Similarly, this code shows the output from a command:
 
 ~~~
 Output
@@ -204,8 +205,6 @@ Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean
 ```
 ~~~
-
-...looks like this on the site:
 
 Output
 {: .label .label-yellow }
@@ -263,9 +262,10 @@ You can also use this in headers, lists and other markdown suported elements, e.
 * *5*{: .circle .circle-purple} `.circle-purple`
 
 ## *2*{: .circle .circle-red} Number in h2
+{: .no_toc }
 
 ### *10*{: .circle .circle-yellow} Number in h3
-
+{: .no_toc }
 
 ### Dropdowns
 
@@ -287,9 +287,12 @@ This is the hidden dropdown content.
 <br />  
 If you want it open by default:
 ~~~
-<details open>
+<details ope
 <summary>This is the dropdown title</summary>
 <br>
 This is the dropdown content that you can hide if you want to.
 </details>
 ~~~
+
+### Table of contents
+See [In-page navigation with Table of Contents](https://pmarsceill.github.io/just-the-docs/docs/navigation-structure/#in-page-navigation-with-table-of-contents) for options to add a TOC within a page (like at the top of this page).
