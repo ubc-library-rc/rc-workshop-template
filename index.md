@@ -13,9 +13,9 @@ Start with the instructions below to setup a Research Commons workshop repositor
 
 ## Set up the RC workshop site
 
-1. Create a public repository in the UBC-Library-RC GitHub account.
-
-2. Create an `index.md` file in the root directory of the new repository. This is the home page for the workshop site. Add these lines at the beginning of the `index.md` file:
+*1*{: .circle .circle-green} Create a public repository in the UBC-Library-RC GitHub account.  
+  
+*2*{: .circle .circle-green} Create an `index.md` file in the root directory of the new repository. This is the home page for the workshop site. Add these lines at the beginning of the `index.md` file:
 
 ```
 ---
@@ -26,36 +26,60 @@ nav_order: 1
 ## Note: this workshop is in development and not yet complete.
 
 This is a [UBC Library Research Commons workshop](https://researchcommons.library.ubc.ca). For more information about our [upcoming workshops](https://researchcommons.library.ubc.ca/events/) and to view [our open workshop content](https://researchcommons.library.ubc.ca/oer/) find us at https://researchcommons.library.ubc.ca.
-
 ```
-3. Create a `_config.yml` file in the root directory of the repository with the content below.  *remote_theme* points to the RC workshop template repository.
+*3*{: .circle .circle-green} Create a `_config.yml` file in the root directory of the repository with the content below.  *remote_theme* points to the RC workshop template repository.
 
 ```
 title: Workshop title
 remote_theme: ubc-library-rc/rc-workshop-template
-footer_content: "<a href=\"https://github.com/username/repository-name/\">View in GitHub</a>"
+github_repo_url: "https://github.com/ubc-library-rc/repository-name/"
+license_url: "http://creativecommons.org/licenses/by/4.0/"
+license_name: "Creative Commons Attribution 4.0 International License"
+license_image_url: "https://i.creativecommons.org/l/by/4.0/88x31.png"
 ```
-Update _title_ with your workshop title (will appear in top left of site) and _footer_content_ with your GitHub repository URL
+Update the following, as necessary:
+- _title_ with your workshop title (will appear in top left of site)
+- _github_repo_url_ with your GitHub repository URL (link at bottom of page)
+- _license_url_, _license_name_, and _license_image_url_ with the license you will apply to your content
 
-In *footer_content* ensure quotation marks surrounding the URL are escaped with a `\` (see example above)
-    {: .warn}
 
-4. In the new repository, turn on _GitHub Pages_:
-    - Go to _Settings_
-    - Scroll down to the _GitHub Pages_ section
-    - Under _Source_, select _master branch_
+_license_image_url_ is optional
+  {: .note}
 
-    After completing these steps the workshop site should be available at `https://ubc-library-rc.github.io/your_workshop_repository_name/`
-    It may take a few minutes for GitHub to generate the site
+*4*{: .circle .circle-green} In the new repository, turn on _GitHub Pages_:
+- Go to _Settings_
+- Scroll down to the _GitHub Pages_ section
+- Under _Source_, select _Branch: main_
 
-5. Create a `README.MD` file with following content (at minimum)
+After completing these steps the workshop site should be available at `https://ubc-library-rc.github.io/your_workshop_repository_name/`.
+It may take a few minutes for GitHub to generate the site.
+
+*5*{: .circle .circle-green} Create a `README.MD` file with following content (at minimum)
 
 ```
 # Name of workshop
 ### UBC Library Research Commons
+
 :heavy_exclamation_mark: This workshop is in development and not yet complete. :heavy_exclamation_mark:    
 Link to workshop: https://ubc-library-rc.github.io/your_workshop_repository_name/
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 ```  
+Update license information with if you choose to apply a different license to your content.
+
+*6*{: .circle .circle-green} Create an `acknowledgments.md` file with attribution and permissions statements for material used in your workshop, as applicable. At a minimum it should have this contents
+
+```
+---
+layout: default
+title: Acknowledgements
+nav_order: 20
+---
+## Acknowledgements
+
+Site template adapted from the [just-the-docs](https://github.com/pmarsceill/just-the-docs) Jekyll template created by [Patrick Marsceil](https://github.com/pmarsceill) and available under the [MIT License](http://opensource.org/licenses/MIT).
+```
+`nav-order` establishes the order pages appear in the navigation menu. Make sure `nav_order` is high enough to display the Acknowledgements link at the bottom of the menu.
 
 ## Add content pages
 Workshop content pages are written in Markdown (see [Markdown guide](https://www.markdownguide.org/basic-syntax/)). Create an .md file for each page of the workshop website. Add the following YAML header at the start of each .md file.
@@ -67,8 +91,6 @@ title: Title of page, will appear in left navigation menu
 nav_order: 1
 ---
 ```  
-
-`nav-order` sets the order pages will appear in the navigation menu
 
 ### Add child pages
 Top-level pages on the site (parents) can also have sub-pages (children). Child pages appear in the navigation menu indented below their parent. The relationship between parent and child pages is defined in the YAML headers of both pages.
@@ -100,12 +122,12 @@ title: Acknowledgements
 nav_order: 10
 ---
 ```
-Make sure `nav_order` is high enough to display the Acknowledgements link at the bottom of the left-hand navigation menu.
+
 
 ## Selected text formatting options
 Below are selected formatting options that may be useful in  in RC worskhop sites.
 
-__Notes__
+### Notes
 
 Use this syntax...
 
@@ -118,7 +140,7 @@ Wash your hands frequently
 Wash your hands frequently
 {: .note}
 
-__Warning__
+### Warning
 ```
 Don't step on the snails!
 {: .warn}
@@ -126,31 +148,20 @@ Don't step on the snails!
 Don't step on the snails!
 {: .warn}
 
-__Danger__
-```
-Snails armed and dangerous
-{: .danger}
-```
-Snails armed and dangerous
-{: .danger}
-
-__Prerequisites.__
+### Prerequisites
 
 This synax...
 
 ```
-- Basic slug identification
-- Comfortable in the woods
+Basic slug identification; comfortable in the woods.
 {: .prereq}
 ```
 ...will look like this:
 
-Something else here  
- - Basic slug identification
- - Comfortable in the woods
+ Basic slug identification; comfortable in the woods.
 {: .prereq}
 
-__Step-by-step instructions__
+### Step-by-step instructions
 ```
 Step 1
 {: .label .label-step}
@@ -173,7 +184,7 @@ Do this other thing
 {: .step}
 
 
-__Terminal input.__
+### Terminal input
 
 Use this formatting to indicate that the participant should input text into the terminal or command line. This...
 
@@ -192,7 +203,7 @@ Input
 $ git status
 ```
 
-__Terminal output.__
+### Terminal output
 
 Shows the output resulting from an action.  This syntax...
 
@@ -216,7 +227,7 @@ Your branch is up-to-date with 'origin/master'.
 nothing to commit, working tree clean
 ```
 
-__Circled numbers__
+### Circled numbers
 
 This synax...
 
@@ -254,7 +265,7 @@ You can also use this in headers, lists and other markdown suported elements, e.
 ### *10*{: .circle .circle-yellow} Number in h3
 
 
-__Dropdowns__
+### Dropdowns
 
 To create hidden content in a dropdown use this:
 
@@ -266,6 +277,12 @@ This is the hidden dropdown content.
 </details>
 ~~~
 
+<details>
+<summary>This is the dropdown title</summary>  
+<br>
+This is the hidden dropdown content.
+</details>  
+<br />  
 If you want it open by default:
 ~~~
 <details open>
@@ -274,9 +291,3 @@ If you want it open by default:
 This is the dropdown content that you can hide if you want to.
 </details>
 ~~~
-
-## Copyright
-
-1. One you are ready to share your content, uncomment the copyright statement by removing these tags: **<!-- -->** in your README.md file and adjust the copyright statement as necessary.
-
-2. Uncomment and adjust the same copyright statement in the side navigation footer by removing these tags: **<!-- -->**
