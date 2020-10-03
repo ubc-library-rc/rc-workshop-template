@@ -22,9 +22,9 @@ footer_content: "<a href=\"https://github.com/ubc-library-rc/rc-workshop-templat
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
 
-license_url: "http://creativecommons.org/licenses/by/4.0"
-license_name: "Creative Commons Attribution 4.0 International License"
-license_image_url: "https://i.creativecommons.org/l/by/4.0/88x31.png"
+license_url: "https://mit-license.org/"
+license_name: "MIT License"
+license_image_url:
 
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
