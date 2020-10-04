@@ -54,12 +54,12 @@ In Mac OS Catalina the default shell is _zsh_ instead of _bash_. Some Ruby insta
 
 ### Jekyll and Jekyll plugins
 
-To generate a local website from a workshop using the RC template you will need to install three Ruby gems:
+To generate a local website from a repository that uses the Research Commons template you will need to install three Ruby gems:
 - jekyll
 - jekyll-seo-tag
 - jekyll-remote-theme
 
-Check whether they are already installed by running `gem list`. To install any that are missing use `gem install`
+Check whether they are already installed by running `gem list`. To install any that are missing use `gem install`. For example:
 
 ```sh
 gem install jekyll
@@ -68,7 +68,7 @@ Repeat this command for the other required gems.
 
 If your Ruby install was successful and you're **not** using the 'system' Ruby on a Mac, this part should be painless. If you're prompted for a password or appear to need _sudo_ to make things work, something else needs fixing first. Review your Ruby setup and make sure gems are being stored in a user-accessible directory (output of the `gem env` command might help troubleshoot).
 
-The setup above should only be required the first time.
+The instructions up to this point are only required the first time, you will not need to repeat them for each new workshop site.
 {: .note}
 
 ## Generate your local site
