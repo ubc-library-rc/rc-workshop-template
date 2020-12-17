@@ -7,7 +7,6 @@
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
@@ -18,7 +17,7 @@ description: A Jekyll theme for RC workshops
 baseurl: "/rc-workshop-template" # the subpath of your site, e.g. /blog
 url: "https://ubc-library-rc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_repo_url: "https://github.com/ubc-library-rc/rc-workshop-template/"
-
+remote_theme: ubc-library-rc/rc-theme
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
 
