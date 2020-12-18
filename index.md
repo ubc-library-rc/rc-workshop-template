@@ -68,6 +68,9 @@ The template includes several files that render as pages in the workshop site:
 | land-acknowledgement.md | Land acknowledgement | land acknowledgement with map from <https://native-land.ca> 
 | online.md | Participating online | guidelines for participant engagement via zoom
 | acknowledgements.md | Acknowledgements | for copyright or content notices (default acknowledges the just-the-docs theme) 
+| content/introduction.md | Introduction | placeholder for first page of lesson content
+
+By default the `introduction.md` file is in the `content` folder, which also contains directories for images used in the site. 
 
 Workshop content pages are written in Markdown (see [Markdown guide](https://www.markdownguide.org/basic-syntax/)). Create an .md file for each page you would like to add to the site. Include the following YAML header at the start of each .md file.
 
