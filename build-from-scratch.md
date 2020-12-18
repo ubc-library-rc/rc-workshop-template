@@ -5,7 +5,7 @@ nav_order: 2
 description:
 ---
 
-The recommended steps for creating a new site are at [Getting started](index.html). Instructions on this page are kept for reference only.
+The recommended steps for creating a new site are at [Getting started](../index.html). Instructions on this page are kept for reference only.
 {: .note}
 
 # UBC Library Research Commons: workshop template
