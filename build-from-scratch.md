@@ -3,6 +3,7 @@ layout: default
 title: Build from scratch (superseded) 
 nav_order: 2
 description:
+nav_exclude: true
 ---
 
 The recommended steps for creating a new site are at [Getting started](../index.html). Instructions on this page are kept for reference only.
