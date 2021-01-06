@@ -21,7 +21,7 @@ Start with the instructions below to setup a Research Commons workshop repositor
 
 ## Set up the RC workshop site
 
-*1*{: .circle .circle-green} Go to <https://github.com/ubc-library-rc/template> and click the green "Use this template" button. Select "ubc-library-rc" as the owner, add a name, and click "Create repository from template" 
+*1*{: .circle .circle-green} Go to <https://github.com/ubc-library-rc/template> and click the green "Use this template" button. Select "ubc-library-rc" as the owner, add a name, ensure the repository is set to "Public", then click "Create repository from template" 
 
 *2*{: .circle .circle-green} The `_config.yml` file in your new repository contains information about the site:
 
@@ -54,6 +54,9 @@ If you're not sure what license to choose the [Creative Commons Attribution 4.0 
 - Go to _Settings_
 - Scroll down to the _GitHub Pages_ section
 - Under _Source_, select _Branch: main_
+
+If you don't see these options under _GitHub Pages_ ensure the repository visibility is _public_ (see the _Change repository visibility_ setting) 
+{: .note}
 
 After completing these steps the workshop site should be available at `https://ubc-library-rc.github.io/REPOSITORY-NAME/`. It may take a few minutes for GitHub to generate the site.
 
