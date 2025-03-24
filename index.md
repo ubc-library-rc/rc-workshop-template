@@ -69,7 +69,6 @@ The template includes several files that render as pages in the workshop site:
 | --- | --- | ---
 | index.md | Outline | the workshop home page
 | land-acknowledgement.md | Land acknowledgement | land acknowledgement with map from <https://native-land.ca> 
-| online.md | Participating online | guidelines for participant engagement via zoom
 | acknowledgements.md | Acknowledgements | for copyright or content notices (default acknowledges the just-the-docs theme) 
 | content/introduction.md | Introduction | placeholder for first page of lesson content
 
