@@ -36,18 +36,17 @@ license_name: "Creative Commons Attribution 4.0 International License"
 license_url: "http://creativecommons.org/licenses/by/4.0/"
 license_image_url: "https://i.creativecommons.org/l/by/4.0/88x31.png"
 
-# required for building jekyll site locally
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-include-cache
 ```
 
 Replace the following:
 - _title_ with your workshop title 
 - _github_repo_url_ with your GitHub repository URL (replace only the "REPOSITORY-NAME" part)
-- _license_url_, _license_name_, and _license_image_url_ with the license you will apply to your content
 
-If you're not sure what license to choose the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) is a good default for Research Commons OERs. The _license_image_url_ is optional (maximum 150px wide).
+A [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) is applied by default. If you want to change this, update _license_name_, _license_url_ and _license_image_url_ (optional, max 150px wide), and replace the `LICENSE` file.
   {: .note}
 
 *3*{: .circle .circle-green} In the new repository, turn on _GitHub Pages_:
