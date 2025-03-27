@@ -13,7 +13,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: RC workshop template
-remote_theme: ubc-library-rc/rc-theme
 description: A Jekyll theme for RC workshops
 baseurl: "/rc-workshop-template" # the subpath of your site, e.g. /blog
 url: "https://ubc-library-rc.github.io" # the base hostname & protocol for your site, e.g. http://example.com
