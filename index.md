@@ -51,8 +51,9 @@ A [Creative Commons Attribution 4.0 International License](http://creativecommon
 
 *3*{: .circle .circle-green} In the new repository, turn on _GitHub Pages_:
 - Go to _Settings_
+- Click _Pages_ in the left-hand panel
 - Scroll down to the _GitHub Pages_ section
-- Under _Source_, select _Branch: main_
+- Under _Branch_, select _main_, then click _Save_
 
 If you don't see these options under _GitHub Pages_ ensure the repository visibility is _public_ (see the _Change repository visibility_ setting) 
 {: .note}
