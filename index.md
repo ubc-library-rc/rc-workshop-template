@@ -287,3 +287,24 @@ This is the dropdown content that you can hide if you want to.
 
 ### Table of contents
 See [In-page navigation with Table of Contents](https://pmarsceill.github.io/just-the-docs/docs/navigation-structure/#in-page-navigation-with-table-of-contents) for options to add a TOC within a page (like at the top of this page).
+
+## Update an existing workshop after a RC template update
+All of these changes need to be done manually.
+Instructions updated 2025-03-31
+### _config.yml 
+Add another jekyll plugin
+```
+ - jekyll-include-cache
+```
+
+### Resources and acknowledgements
+The old file was only acknowledgements but we changed it to Resources and acknowledgements. This file can include any common links your team uses in the Resources sub-header.
+
+### Land acknowledgement
+Updated to include multiple traditional territories. Will include a new map with matching territories soon.
+
+### Online (how to use Zoom)
+This file was removed alogn with corresponding images. 
+
+### Updated Logo
+The old RC logo was replaced in the updated theme. You can find the updated image in "rc-theme/assets/images/rc-logo.png". Download this image and add it to the "assets/images/rc-logo.png" directory in your workshop. 
