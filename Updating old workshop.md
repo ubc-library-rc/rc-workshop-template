@@ -14,9 +14,6 @@ The Research Commons occasionally updates the [rc-theme]() and [template]() repo
 The most recent theme and template updates happened in __March 2025__.
 
 ### Required
-This step is required; without it you will not be able to update any published website.
-{: .warn}
-
 Each workshop repository has a `_config.yml` file with metadata and configuration information. After the March 2025 template upgrade, this file must include a reference to the `jekyll-include-cache` plugin, otherwise website updates will fail. The last four lines of your file should look like this:
 
 ```
@@ -26,7 +23,7 @@ plugins:
   - jekyll-include-cache
 ```
 
-In most repositories you will only need to add the last line, but some older repositories might be missing the entire `plugins:` section (see a sample `_config.yml` file [here](https://github.com/ubc-library-rc/template/blob/main/_config.yml)).
+In most repositories you will only need to add the last line, but some older repositories might be missing the entire `plugins:` section (see [sample `_config.yml` file](https://github.com/ubc-library-rc/template/blob/main/_config.yml)).
 
 ### Optional
 These changes are not required but teams might choose to apply them for consistency. 
