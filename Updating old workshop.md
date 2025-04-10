@@ -1,35 +1,38 @@
 ---
 layout: default
-title: Update an existing workshop after a RC template update
+title: Update existing workshop after a template update
 nav_order: 3
 description:
 ---
 
-All of these changes need to be done manually.
-Instructions updated 2025-03-31
+The Research Commons occasionally updates the [rc-theme]() and [template]() repositories that govern the layout and default content of workshop websites. After an update:
 
-## Required updates
+1. Theme-related changes are automatically applied the next time the workshop is updated (e.g. changes to layout, colour, footers, etc.)
+2. Template-related changes may be applied manually, if desired (e.g. changes to default pages or content)
 
-This step is required; without it you will not be able to update the published website
+## Update steps
+The most recent theme and template updates happened in __March 2025__.
 
-### _config.yml 
-Add another jekyll plugin. See the [updated file here](https://github.com/ubc-library-rc/template/blob/main/_config.yml)
+### Required
+This step is required; without it you will not be able to update any published website.
+{: .warn}
+
+Each workshop repository has a `_config.yml` file with metadata and configuration information. After the March 2025 template upgrade, this file must include a reference to the `jekyll-include-cache` plugin, otherwise website updates will fail. The last four lines of your file should look like this:
+
 ```
- - jekyll-include-cache
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-include-cache
 ```
 
-## Optional updates
+In most repositories you will only need to add the last line, but some older repositories might be missing the entire `plugins:` section (see a sample `_config.yml` file [here](https://github.com/ubc-library-rc/template/blob/main/_config.yml)).
 
-These changes are not required to update the published workshop. 
+### Optional
+These changes are not required but teams might choose to apply them for consistency. 
 
-### Resources and acknowledgements
-The old file was only acknowledgements but we changed it to [Resources and acknowledgements](https://github.com/ubc-library-rc/template/blob/main/resources_and_acknowledgements.md). This file can include any common links your team uses in the Resources sub-header.
-
-### Land acknowledgement
-Updated to include [multiple traditional territories](https://github.com/ubc-library-rc/template/blob/main/land-acknowledgement.md). Will include a new map with matching territories soon.
-
-### Online (how to use Zoom)
-This file was removed along with corresponding images. 
-
-### Updated Logo
-The old RC logo was replaced in the updated theme. You can find the updated image in [here](https://github.com/ubc-library-rc/rc-theme/blob/master/assets/images/rc-logo.png). Download this image and add it to the "assets/images/rc-logo.png" directory in your workshop. 
+| File | Change |
+| --- | --- |
+| [Resources_and_acknowledgements.md](https://github.com/ubc-library-rc/template/blob/main/resources_and_acknowledgements.md) | Replaces the previous "acknowledgements" file; includes a "Resources" sub-header for RC links and other relevant content  |
+| [land-acknowledgement.md](https://github.com/ubc-library-rc/template/blob/main/land-acknowledgement.md) | __In development:__ will be modified to include a <https://native-land.ca> map showing Musqueam, Squamish, and Tsleil-waututh territories |
+| online.md | This file was removed along with corresponding images (contained instructions for interacting on Zoom that are no longer considered necessary) |
